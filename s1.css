@@ -47,7 +47,7 @@ body {
 
 .cover {
     
-    background: url('imgs/bg.jpg') no-repeat center center/cover;
+    background: url('Imgs/bg.jpg') no-repeat center center/cover;
     height: 400px;
     display: flex;
     justify-content: center;
