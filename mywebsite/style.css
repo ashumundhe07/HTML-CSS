@@ -1,0 +1,318 @@
+/* 
+  Global Styles: These styles apply to the entire webpage, setting the base font, 
+  background color, and default transitions for a smoother visual experience.
+*/
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e0d0; /* Soft beige background */
+  transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+}
+
+/* 
+  Container: A central wrapper that ensures the content is centered and does not 
+  extend beyond a certain width, making the design look clean and aligned.
+*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; /* Prevents any floated elements from overflowing the container */
+}
+
+/* 
+  Unordered List (ul): Removes default padding and margin from lists to allow 
+  for custom styling.
+*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+  Button Styling: Creates a gradient button with smooth hover effects 
+  including a lift-up effect and shadow changes.
+*/
+.button_1 {
+  height: 38px;
+  background: linear-gradient(135deg, #a57f60, #826547); /* Earthy gradient background */
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fdfaf6; /* Light cream text color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.button_1:hover {
+  transform: translateY(-3px); /* Lifts the button slightly on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deepens the shadow on hover */
+}
+
+/* 
+  Dark Section: Applies a dark theme to specific sections with padding, 
+  rounded corners, and a shadow for depth.
+*/
+.dark {
+  padding: 15px;
+  background: #6d6458; /* Earthy brown background */
+  color: #fdfaf6; /* Light cream text color */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for a floating effect */
+}
+
+/* 
+  Header: Styles the website's header with a dark brown background, cream text, and 
+  adds a shadow for depth. The header is also set to stay on top using z-index.
+*/
+header {
+  background: #4e3b31; /* Dark brown background */
+  color: #fdfaf6; /* Light cream text color */
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #bfa27f 3px solid; /* Soft gold border at the bottom of the header */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for a more prominent header */
+  position: relative;
+  z-index: 1000; /* Ensures the header stays above other content */
+}
+
+/* 
+  Header Links: Styles links in the header with a smooth transition 
+  effect on hover for color change.
+*/
+header a {
+  color: #fdfaf6; /* Light cream text color */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* 
+  Header List Items: Controls the spacing and alignment of list items in 
+  the header, ensuring they are displayed inline.
+*/
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px; /* Spacing between menu items */
+}
+
+/* 
+  Branding: Styles the branding/logo section of the header, ensuring it 
+  is aligned to the left with no margin.
+*/
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow to the text for emphasis */
+  transition: text-shadow 0.3s ease; /* Smooth transition for text-shadow */
+}
+
+/* 
+  Navigation: Aligns the navigation to the right and applies a small 
+  top margin to center it vertically within the header.
+*/
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+/* 
+  Highlighted Links: Applies special styles to highlighted or current links 
+  in the header, such as a soft gold color and bold font-weight.
+*/
+header .highlight, header .current a {
+  color: #bfa27f; /* Soft gold color for highlighted links */
+  font-weight: bold;
+}
+
+/* 
+  Header Link Hover Effect: Adds a hover effect to links in the header, 
+  changing the color to soft gold and making the font bold.
+*/
+header a:hover {
+  color: #bfa27f; /* Changes link color to soft gold on hover */
+  font-weight: bold;
+}
+
+/* 
+  Showcase Section: Styles the main showcase area with a background image, 
+  centered text, and a large heading with a shadow effect for a dramatic impact.
+*/
+#showcase {
+  min-height: 400px;
+  background: url('../img/showcase.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fdfaf6; /* Light cream text color */
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  text-shadow: 2px 3px #3b3029; /* Adds depth to the heading with a dark brown shadow */
+  animation: fadeInDown 1s ease-out; /* Fade-in animation for the heading */
+}
+
+#showcase p {
+  font-size: 20px;
+  animation: fadeInUp 1s ease-out; /* Fade-in animation for the paragraph */
+}
+
+/* 
+  Newsletter Section: Applies styles to the newsletter section, including 
+  background color, padding, and styling for form elements.
+*/
+#newsletter {
+  padding: 15px;
+  color: #fdfaf6; /* Light cream text color */
+  background: #4e3b31; /* Dark brown background */
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#newsletter button {
+  height: 38px;
+  background: #bfa27f; /* Soft gold button background */
+  border: 0;
+  color: #4e3b31; /* Dark brown text color */
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#newsletter button:hover {
+  background-color: #a57f60; /* Changes button color to a darker earthy tone on hover */
+  transform: translateY(-3px); /* Lifts the button slightly */
+  text-shadow: 0.5px 0.5px #4e3b31; /* Adds a subtle shadow to the text */
+}
+
+/* 
+  Boxes Section: Styles individual boxes with padding, centered text, 
+  and a shadow effect for a floating appearance.
+*/
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  background: #f2e8dc; /* Light beige background for boxes */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#boxes .box:hover {
+  transform: translateY(-5px); /* Lifts the box slightly on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Deepens the shadow on hover */
+}
+
+#boxes .box img {
+  width: 90px;
+  border-radius: 50%; /* Makes the image circular */
+  transition: transform 0.3s ease;
+}
+
+#boxes .box img:hover {
+  transform: rotate(360deg); /* Rotates the image on hover */
+}
+
+/* 
+  Sidebar: Styles the sidebar, including form input and textarea elements, 
+  ensuring consistent padding and width.
+*/
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* 
+  Main Content: Ensures the main content is aligned properly, occupying 
+  the remaining width beside the sidebar.
+*/
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/* 
+  Footer: Styles the footer with a dark brown background, cream text, 
+  and centered text for a clean, unified look.
+*/
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #fdfaf6; /* Light cream text color */
+  background-color: #4e3b31; /* Dark brown background */
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a more prominent footer */
+}
+
+/* 
+  Media Queries: Ensures the design is responsive, adapting the layout for 
+  screens 768px wide and smaller.
+*/
+@media(max-width: 768px) {
+  header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col, aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+
+  #newsletter form {
+    margin-top: 10px;
+  }
+
+  #boxes .box {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
